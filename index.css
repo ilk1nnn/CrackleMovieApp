@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+.headertitle {
+    font-family: 'Passion One', cursive;
+    font-size: 30px;
+    color: orangered;
+    text-decoration: none;
+}
+
+
+.mynav {
+    background-color: black;
+}
+
+.mya {
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+body {
+    background-color: black;
+}
+
+hr {
+    position: relative;
+    border: none;
+    height:5px;
+    background: black;
+    margin-bottom: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mybutton {
+    margin-left: 10px;
+}
+
+
+.mybutton2 {
+    margin-left: -20px;
+}
+
+
+.mysection {
+    text-align: center;
+    margin: auto;
+}
+
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+.titlesection {
+    text-align: center;
+    margin: auto;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Website</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body style="background-color: black;">
+
+
+
+  <section style="display: block;">
+    <nav style="background-color: black;" class="navbar navbar-dark navbar-expand-lg mynav">
+      <!-- Navbar content -->
+      <div class="container-fluid">
+        <a class="headertitle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions" style="cursor: pointer;">CRACKLE</a>
+        <section>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active mya" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                  aria-controls="offcanvasExample" style="color: white;font-size: 20px;" aria-current="page" href="#">
+                  Click Logo For All Categories</a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mya" style="font-size: 20px;" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mya" style="font-size: 20px;" href="#">Movies</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <form>
+          <input class="form-control" id="mysearch" placeholder="Enter A Movie Name" type="search" aria-label="Search">
+        </form>
+        <section>
+          <button type="button" onclick="GetAllSearchedMoviesCall()" class="btn mybutton2 btn-sm"
+          style="background-color: white;font-weight: bolder;">Search Movie</button>
+          <button type="button" class="btn mybutton btn-sm"
+            style="background-color: orangered;font-weight: bolder;">Create Account</button>
+          <button type="button" style="color: white;" class="btn btn-outline-danger btn-sm mybutton">Sign In</button>
+        </section>
+      </div>
+    </nav>
+  </section>
+
+
+
+  <section style="display: block;">
+    <section style="display: inline-block;">
+      <div style="background-color: #434242;color: white;" class="offcanvas offcanvas-start" data-bs-scroll="true"
+        tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><b>Movie Categories</b></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div id="categorycontainer" class="offcanvas-body">
+          <a class="nav-link " onclick="AllCall()" style="font-size: 20px;" href="#"><b>All</b></a>
+          <a class="nav-link " onclick="OnlyMovieCall()" style="font-size: 20px;" href="#">Movies</a>
+          <a class="nav-link " onclick="OnlySeriesCall()" style="font-size: 20px;" href="#">Series</a>
+
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+
+  <section  style="display:flex;flex-wrap: wrap;" id="result"></section>
+
+
+
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
